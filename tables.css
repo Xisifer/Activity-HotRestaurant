@@ -1,0 +1,13 @@
+.container {
+    text-align: center;
+    background-color: rgb(226, 226, 226);
+    width: 100%;
+    font-size: 30px;
+    height: 100%;
+    padding: 30px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+}
