@@ -1,0 +1,8 @@
+body > div > div.card-image.waves-effect.waves-block.waves-light > img {
+    height: 300px;
+    width: auto;
+}
+
+.card{
+    height: 100vh;
+}
