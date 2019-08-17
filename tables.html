@@ -6,18 +6,21 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="tables.css">
 </head>
 <body>
     <div class="container">
         <div class="jumbotron">
             <h1 class="text-center"><span class="glyphicon glyphicon-fire"></span> Hot Restaurant</h1>
             <hr>
+            </div>
+        
             <h2 class="text-center">Current Reservations and Waiting List</h2>
-        <br>
             <div class="text-center">
                 <a href="/reserve"><button type="button" class="btn btn-lg btn-danger"><span class="glyphicon glyphicon-credit-card"></span> Make Reservation</button></a>
-                <a href="/"><button type="button" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-home"></span></button></a>
-                </div>
+
+                <a class="waves-effect waves-light btn"><i class="material-icons right">home</i>Home</a>
+            </div>
             </div>
 
     <div class="row">
@@ -52,11 +55,7 @@
     </div>
 
 
-    <footer class="footer">
-    <div class="container">
-        <p>Control Panel</p>
-    <p><a href="#" id="clear">Clear Table</a> | <a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a></p>
-    </div>
+
     </footer>
 
     </div>
