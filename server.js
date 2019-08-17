@@ -5,8 +5,8 @@ var path = require("path");
 
 // Sets up the Express App
 // =============================================================
-var app = express();
-var PORT = process.env.PORT || 3000;
+const app = express();
+const PORT = process.env.PORT || 3000;
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
@@ -27,7 +27,7 @@ const reservationList = [
     // phone:$("#phone_number").val().trim(),
     // email:$("#email").val().trim(),
     // uid:$("#uninque_id").val().trim()
-    // }
+    // },
     {
         name:"Jane 'Eleven' Ives",
         phone:"(555)123-4567",
@@ -53,17 +53,17 @@ console.log(reservationList);
 
 // Basic route that sends the user first to the AJAX Page
 app.get("/", function(request, response) {
-    response.sendFile(path.join(__dirname, "home.html"));
+    response.sendFile(path.join(__dirname, "index.html"));
   });
   
-  app.get("/data", function(request, response) {
-    response.sendFile(path.join(__dirname, "data.html"));
+  app.get("/tables", function(request, response) {
+    response.sendFile(path.join(__dirname, "tables.html"));
   });
 
-  app.get("/reserve", function(request, response) {
-    response.sendFile(path.join(__dirname, "reserve.html"));
+  app.get("/make", function(request, response) {
+    response.sendFile(path.join(__dirname, "make.html"));
   });
-  
+
   // Displays all characters
   app.get("/api/reservations", function(request, response) {
     response.json(reservationList);

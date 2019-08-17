@@ -2,3 +2,17 @@
     text-align: center;
 }
 
+#jumbotron {
+    background-color: rgb(226, 226, 226);
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+
+.form {
+    padding: 10px;
+}
+
+#submit {
+    float: right;
+}

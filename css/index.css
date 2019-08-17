@@ -5,4 +5,9 @@ body > div > div.card-image.waves-effect.waves-block.waves-light > img {
 
 .card{
     height: 100vh;
+    text-align: center;
+}
+
+.card .card-image img {
+    display: inline-block;
 }
